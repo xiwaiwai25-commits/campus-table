@@ -15,7 +15,7 @@ Then visit `http://localhost:4173`.
 ## Demo flows
 
 - Student: register an account, browse stalls, add an item, check out, and follow the order.
-- Vendor: use the Student/Vendor switch and register or log in as a vendor to open Vendor Studio. The vendor workspace is seeded with Little Fern Café and sample orders.
+- Vendor: use the Student/Vendor switch and register or log in as a vendor to open Vendor Studio. The vendor workspace is seeded with Nook & Noodle and sample orders.
 - Vendor can accept or decline orders, set pickup estimates, update preparation status, edit menu availability, reply to reviews, and view sample sales reports.
 - Student can review completed orders, inspect past orders, manage their account, and see a spending summary.
 
