@@ -2,9 +2,15 @@
 
 A responsive campus food ordering prototype for a student innovation competition.
 
+## Try the demo online
+
+Open the hosted app: <https://xiwaiwai25-commits.github.io/campus-table/>.
+
+Opening `index.html` from GitHub shows the source code; GitHub's file viewer does not run the app. To run it locally, download or clone this repository and use VS Code Live Server, or start the small local server below.
+
 ## Run it
 
-Open `index.html` in a modern browser, or run a local server from this folder:
+From this folder, run:
 
 ```powershell
 python -m http.server 4173
