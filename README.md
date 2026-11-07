@@ -5,6 +5,8 @@
 
 MealSync is a campus food ordering web app for students and campus vendors. Guest visitors can browse; a registered account is required for real orders. Sample accounts are available from **Try demo** and need no email. Payment processing is not enabled.
 
+The Supabase JavaScript client is served from this repository, so the app does not depend on third-party CDN scripts. Internet access is still required to reach the shared Supabase backend.
+
 ## Local run
 
 Open `index.html` with VS Code Live Server, or run `python -m http.server 4173` in this folder and visit `http://localhost:4173`. Keep the server open. Do not double-click the HTML file: `file://` can only show a limited preview; real shared orders need the web server and internet.
