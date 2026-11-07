@@ -1,16 +1,16 @@
-# Campus Table
+# MealSync
 
-A responsive campus food ordering prototype for a student innovation competition.
+A shared campus food ordering web app for students and independent campus vendors.
 
-## Try the demo online
+## Live app
 
-Open the hosted app: <https://xiwaiwai25-commits.github.io/campus-table/>.
+[Open MealSync](https://xiwaiwai25-commits.github.io/campus-table/)
 
-Opening `index.html` from GitHub shows the source code; GitHub's file viewer does not run the app. To run it locally, download or clone this repository and use VS Code Live Server, or start the small local server below.
+The app uses Supabase for accounts, store menus, orders, ratings, and live order updates. Register as a student or vendor. Students can browse without signing in; an account is required to place an order. Email and password are used to log in. Student TP number and vendor store name are profile details.
 
-## Run it
+## Run locally
 
-From this folder, run:
+Open this folder in VS Code and use Live Server, or run:
 
 ```powershell
 python -m http.server 4173
@@ -18,15 +18,10 @@ python -m http.server 4173
 
 Then visit `http://localhost:4173`.
 
-## Demo flows
+## Core flows
 
-- Student: register an account, browse stalls, add an item, check out, and follow the order.
-- Vendor: use the Student/Vendor switch and register or log in as a vendor to open Vendor Studio. The vendor workspace is seeded with Nook & Noodle and sample orders.
-- Vendor can accept or decline orders, set pickup estimates, update preparation status, edit menu availability, reply to reviews, and view sample sales reports.
-- Student can review completed orders, inspect past orders, manage their account, and see a spending summary.
+- Students can browse/search stores and menus, place an order with a note, follow live status, cancel before acceptance (or when the vendor sets an estimate over 60 minutes), review completed orders, and see order history and monthly spending.
+- Vendors can edit their store and menu, mark products unavailable, accept or decline orders with a reason, set prep estimates, update order status, reply to reviews, and view reports based on actual orders.
+- Guests can browse but need a registered account to add to bag and order.
 
-## Prototype scope
-
-This is a front-end prototype. User accounts, menu edits, reviews, and orders are stored in the current browser's local storage. There is no shared server, secure authentication, real-time cross-device notification, or payment processing yet. Product photos use remote Unsplash image URLs. The sales dashboard includes illustrative sample figures when there is not yet enough completed demo data.
-
-Before a live multi-user launch, connect a hosted database and secure authentication, and implement shared order updates and notifications.
+No payment processing is enabled. The site is hosted on GitHub Pages; shared data and authentication are provided by the separate Supabase project.
