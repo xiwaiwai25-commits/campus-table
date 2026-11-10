@@ -74,7 +74,7 @@ $$;
 create or replace function public.demo_reset()
 returns void language plpgsql security definer set search_path = '' as $$
 begin
-  update public.demo_stores set is_open = true, opening_hours = '{}'::jsonb;
+  update public.demo_stores set is_open = true, opening_hours = '{}'::jsonb where true;
   delete from public.demo_orders where true;
   delete from public.demo_products where id not in (
     '20000000-0000-4000-8000-000000000001'::uuid,
