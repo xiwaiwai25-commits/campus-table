@@ -7,7 +7,7 @@ MealSync is a campus food ordering prototype. Guests can browse; Demo students c
 
 ## Run locally on Windows
 
-Run `start-demo.bat` from this folder. It starts a local server and opens **http://localhost:4173**. Python must be installed. To stop the server, close its command window.
+Run `start-demo.bat` from this folder. It starts a local server bound to `127.0.0.1` and opens **http://127.0.0.1:4173/**. Python must be installed. To stop the server, close its command window.
 
 Alternatively, run this command in the repository folder and open **http://127.0.0.1:4173/**:
 
