@@ -7,13 +7,15 @@ MealSync is a campus food ordering prototype. Guests can browse; Demo students c
 
 ## Run locally on Windows
 
-Run `start-demo.bat` from this folder. It starts a local server bound to `127.0.0.1` and opens **http://127.0.0.1:4173/**. Python must be installed. To stop the server, close its command window.
-
-Alternatively, run this command in the repository folder and open **http://127.0.0.1:4173/**:
+1. Open the project folder in VS Code. Choose the folder that contains `index.html` and `README.md`.
+2. In VS Code, open **Terminal → New Terminal**. Run this command in the terminal:
 
 ```powershell
 python -m http.server 4173 --bind 127.0.0.1
 ```
+
+3. Open **http://127.0.0.1:4173/** in your browser. Do not add a colon after the final slash.
+4. To stop the local server, return to the VS Code terminal and press **Ctrl+C**.
 
 ## Demo
 
