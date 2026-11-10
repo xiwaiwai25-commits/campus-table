@@ -23,4 +23,4 @@ Keep the terminal open and visit **http://127.0.0.1:4173/** in your browser. Sto
 
 ## Demo
 
-Choose **Try the interactive demo**, then Sample Student or one of four sample stalls. Sample orders and menu edits are shared across browsers and separate from real accounts. **Account details → Reset shared demo** clears sample orders and restores the sample menus for everyone. Guest browsing is read-only. Registered users see live store data only.
+Choose **Try the interactive demo**, then Sample Student or one of four sample stalls. Demo students can order and review completed orders; sample stalls can update order status, edit menus and reply to reviews. Changes are shared across browsers and separate from real accounts. **Account details → Reset shared demo** clears sample orders and reviews and restores the sample menus for everyone. Guests can search and browse sample stalls; adding an item, past orders or account details prompts login or registration. Registered users see live store data only.
