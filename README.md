@@ -1,26 +1,20 @@
 # MealSync
 
-**Live app:** [https://xiwaiwai25-commits.github.io/campus-table/](https://xiwaiwai25-commits.github.io/campus-table/)  
-**GitHub repository:** [https://github.com/xiwaiwai25-commits/campus-table](https://github.com/xiwaiwai25-commits/campus-table)
+**Live app:** [mealsync](https://xiwaiwai25-commits.github.io/campus-table/)\
+**Source code:** [GitHub repository](https://github.com/xiwaiwai25-commits/campus-table)
 
-MealSync is a campus food ordering prototype for students and campus vendors. Guests can browse sample stalls, Demo accounts can place and manage shared sample orders, and registered accounts use real store and order data. Registration uses a username and password; student accounts also enter a TP number in the format `TP` plus six digits. No email is collected. Payment processing is not enabled.
+MealSync is a campus food ordering prototype. Guests can browse; Demo students can place shared sample orders; Demo vendors can manage sample stalls. Registered students and vendors use real account data. Student registration requires a TP number (`TP` plus six digits). Payments are not enabled.
 
-The Supabase JavaScript client is served from this repository, so the app does not depend on third-party CDN scripts. Internet access is still required to reach the shared Supabase backend.
+## Run locally on Windows
 
-## Run locally with Live Server
+Run `start-demo.bat` from this folder. It starts a local server and opens **http://localhost:4173**. Python must be installed. To stop the server, close its command window.
 
-Open this folder in VS Code, open `index.html`, and choose **Go Live** from the status bar (or right-click the file and choose **Open with Live Server**). Keep VS Code open while using the site. Live Server works best for the local preview.
-
-## Optional local Python preview
-
-The Python preview was also opened successfully in Chrome on this computer. In a terminal at the repository folder, run:
+Alternatively, run this command in the repository folder and open **http://127.0.0.1:4173/**:
 
 ```powershell
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Keep the terminal open and visit **http://127.0.0.1:4173/** in your browser. Stop with `Ctrl+C`. Do not double-click the HTML file: `file://` only shows a limited preview. Shared orders need an internet connection to Supabase.
-
 ## Demo
 
-Choose **Try the interactive demo**, then Sample Student or one of four sample stalls. Demo students can order and review completed orders; sample stalls can update order status, edit menus and reply to reviews. Changes are shared across browsers and separate from real accounts. **Account details → Reset shared demo** clears sample orders and reviews and restores the sample menus for everyone. Guests can search and browse sample stalls; adding an item, past orders or account details prompts login or registration. Registered users see live store data only.
+Choose **Try the interactive demo**, then **Sample Student** or a sample stall. Demo changes are shared across browsers and kept separate from real accounts. **Account details → Reset shared demo** clears Demo orders and reviews and restores the 8 sample menus. Guests can browse; ordering and account features require login. Registered users see real store data.
